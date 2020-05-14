@@ -1,4 +1,5 @@
 import BurgersController from "./Controllers/BurgersController.js";
+import cartcontroller from "./Controllers/cartcontroller.js"
 
 class App {
 
@@ -6,6 +7,8 @@ class App {
     console.log("constructor main.js")
   }
   BurgersController = new BurgersController();
+
+  cartcontroller = new cartcontroller()
 }
 
 window["app"] = new App();

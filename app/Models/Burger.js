@@ -15,9 +15,9 @@ export default class Burger {
         <div class="col-3">
         <div class="card shadow">
             <div class="card-body d-flex flex-column">
-                <p
-                    onclick="app.burgersController.deleteBurger('${this.id}')">x</p>
+                <i class="fas fa-times text-danger align-self-end action" onclick="app.BurgersController.deleteBurger('${this.id}')"></i>
                 <h4 class="card-title">Name: ${this.type}</h4>
+                <h5 class="card-title">Patties: ${this.number}</h5>
                 <ul class="pl-3">
                     ${this.ToppingsTemplate}
                 </ul>
@@ -28,6 +28,7 @@ export default class Burger {
                         <button type="submit" class="btn btn-outline-success ml-1">submit</button>
                     </div>
                 </form>
+                <button onclick= "app.cartcontroller.addItem (${this.id})" class="btn btn-outline-success">Add to Cart</button>
             </div>
             </div>
             </div>`

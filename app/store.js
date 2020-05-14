@@ -1,8 +1,10 @@
 import Burger from "./Models/Burger.js";
+import Item from "./Models/Cart.js"
 
 let _state = {
   /** @type {Burger[]} */
-  burgers: []
+  burgers: [],
+  cart: []
 };
 
 
