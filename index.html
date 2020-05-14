@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>cheeseburgerstand</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+                <h3>Cheeseburger Stand</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container-fluid bg-light">
+            <div class="row">
+
+                <div class="col-3">
+                    <form class="form-inline" onsubmit="app.BurgersController.addBurger(event)"></form>
+                    <div class="form-group">
+                        <label for="type">Type of Burger </label>
+                        <input type="text" class="form-control" name="type" id="type" aria-describedby="type"
+                            placeholder="Type..." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">Number of Patties </label>
+                        <input type="number" class="form-control" name="number" id="number" aria-describedby="number"
+                            placeholder="Number..." required>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-outline-success">Submit</button>
+            </form>
+
+
+
+
+            <div id="cheeseburgers" class="row">
+
+            </div>
+
+        </div>
+    </body>
+
+    <footer>
+
+    </footer>
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
