@@ -17,10 +17,7 @@
             <a class="navbar-brand" href="#">
                 <h3>Cheeseburger Stand</h3>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+
         </nav>
     </header>
 
@@ -29,25 +26,25 @@
             <div class="row">
 
                 <div class="col-3">
-                    <form class="form-inline" onsubmit="app.BurgersController.addBurger(event)"></form>
-                    <div class="form-group">
-                        <label for="type">Type of Burger </label>
-                        <input type="text" class="form-control" name="type" id="type" aria-describedby="type"
-                            placeholder="Type..." required>
-                    </div>
+                    <form class="form-inline" onsubmit="app.BurgersController.addBurger(event)">
+                        <div class="form-group">
+                            <label for="type">Type of Burger </label>
+                            <input type="text" class="form-control" name="type" id="type" aria-describedby="type"
+                                placeholder="Type..." required>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="number">Number of Patties </label>
-                        <input type="number" class="form-control" name="number" id="number" aria-describedby="number"
-                            placeholder="Number..." required>
-                    </div>
+                        <div class="form-group">
+                            <label for="number">Number of Patties </label>
+                            <input type="number" class="form-control" name="number" id="number"
+                                aria-describedby="number" placeholder="Number..." required>
+                        </div>
+                        <button type="submit" class="btn btn-outline-success">Submit</button>
+                    </form>
                 </div>
             </div>
 
 
 
-            <button type="submit" class="btn btn-outline-success">Submit</button>
-            </form>
 
 
 
